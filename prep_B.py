@@ -53,6 +53,29 @@ fruits = ["apple", "banana", "cherry"]
 my_function(fruits)
 
 
+#per farci ritornare un valore dalla funzione uso return 
+def my_function(x):
+  return 5 * x
 
+print(my_function(3))
+print(my_function(5))
+print(my_function(9))
+
+
+# uso il pass per creare una funzione vuota senza che mi dia errore 
+def myfunction():
+  pass
+
+ # 
+def tri_recursion(k):
+  if(k > 0):
+    result = k + tri_recursion(k - 1) # decremento di uno finchè non usciamo da if 
+    print(result)
+  else:
+    result = 0
+  return result
+
+print("\n\nRecursion Example Results")
+tri_recursion(6)
 
 
